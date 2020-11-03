@@ -16,7 +16,7 @@ sudo ./netfilter-test test.gilgil.net
 # example of execution    
     
 ./netfilter-test test.gilgil.net    
-        
+        et
 opening library handle    
 unbinding existing nf_queue handler for AF_INET (if any)    
 binding nfnetlink_queue as nf_queue handler for AF_INET    
@@ -30,10 +30,10 @@ hw_protocol=0x0800 hook=3 id=3 outdev=2 payload_len=52
     
 ....
     
-hw_protocol=0x0800 hook=3 id=15 outdev=2 payload_len=807    
-Analysing HTTP header!    
-Host:www.tabforgood.com    
- This is accepted!    
+hw_protocol=0x0800 hook=3 id=63 outdev=2 payload_len=523 
+Analysing HTTP header!
+Host:timebit.sg
+ This is accepted!
     
 ....
     

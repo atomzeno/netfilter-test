@@ -2,9 +2,9 @@
     
 after typing
 
-sudo iptables -F
-sudo iptables -A OUTPUT -j NFQUEUE --queue-num 0
-sudo iptables -A INPUT -j NFQUEUE --queue-num 0
+sudo iptables -F    
+sudo iptables -A OUTPUT -j NFQUEUE --queue-num 0    
+sudo iptables -A INPUT -j NFQUEUE --queue-num 0    
 
 usage example 1 : ./netfilter-test test.gilgil.net    
 usage example 2 : ./netfilter-test portal.korea.ac.kr    

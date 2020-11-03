@@ -30,10 +30,10 @@ hw_protocol=0x0800 hook=3 id=3 outdev=2 payload_len=52
     
 ....
     
-hw_protocol=0x0800 hook=3 id=63 outdev=2 payload_len=523 
-Analysing HTTP header!
-Host:timebit.sg
- This is accepted!
+hw_protocol=0x0800 hook=3 id=63 outdev=2 payload_len=523    
+Analysing HTTP header!    
+Host:timebit.sg    
+ This is accepted!    
     
 ....
     

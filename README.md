@@ -16,7 +16,7 @@ sudo ./netfilter-test test.gilgil.net
 # example of execution    
     
 ./netfilter-test test.gilgil.net    
-        et
+        
 opening library handle    
 unbinding existing nf_queue handler for AF_INET (if any)    
 binding nfnetlink_queue as nf_queue handler for AF_INET    

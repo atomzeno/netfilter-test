@@ -219,6 +219,7 @@ static int cb(struct nfq_q_handle *qh, struct nfgenmsg *nfmsg,
                 break;
             }
         }
+        hostname[256]=0;
         //printf("------------------------------------------------------\n");
         //printf("!!!!Host:%s\n",hostname);
         //printf("------------------------------------------------------\n");
@@ -239,7 +240,8 @@ static int cb(struct nfq_q_handle *qh, struct nfgenmsg *nfmsg,
 int main(int argc, char **argv)
 {
     if(argc!=2){
-        printf("usage : ./netfilter-test test.gilgil.net");
+        printf("usage : ./netfilter-test test.gilgil.net\n");
+        exit(1);
     }
     struct nfq_handle *h;
     struct nfq_q_handle *qh;

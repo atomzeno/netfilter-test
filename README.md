@@ -24,23 +24,48 @@ input host : test.gilgil.net
 binding this socket to queue '0'    
 setting copy_packet mode    
     
-hw_protocol=0x0800 hook=3 id=1 outdev=2 payload_len=61    
-hw_protocol=0x0800 hook=1 id=2 hw_src_addr=b8:55:10:e0:10:50 indev=2 payload_len=55    
-hw_protocol=0x0800 hook=3 id=3 outdev=2 payload_len=52    
-    
-....
-    
-hw_protocol=0x0800 hook=3 id=63 outdev=2 payload_len=523    
 Analysing HTTP header!    
-Host:timebit.sg    
- This is accepted!    
-    
-....
-    
-hw_protocol=0x0800 hook=3 id=89 outdev=2 payload_len=540    
-Analysing HTTP header!    
+This packet's method is : GET    
 Host:test.gilgil.net    
- This is dropped!    
+This packet is dropped!    
+Analysing HTTP header!    
+This packet's method is : GET    
+Host:test.gilgil.net    
+This packet is dropped!    
+    
+....
+    
+Analysing HTTP header!    
+This packet's method is : GET    
+Host:passport.tianya.cn    
+This packet is accepted!    
+Analysing HTTP header!    
+This packet's method is : GET    
+Host:test.gilgil.net    
+This packet is dropped!    
+Analysing HTTP header!    
+This packet's method is : GET    
+Host:rakuten.co.jp    
+This packet is accepted!    
+Analysing HTTP header!    
+This packet's method is : GET    
+Host:test.gilgil.net    
+This packet is dropped!    
+    
+....
+    
+Analysing HTTP header!    
+This packet doesn't uses get or post method!    
+Analysing HTTP header!    
+This packet's method is : GET    
+Host:portal.korea.ac.kr    
+This packet is accepted!    
+Analysing HTTP header!    
+This packet doesn't uses get or post method!    
+Analysing HTTP header!    
+This packet's method is : POST    
+Host:portal.korea.ac.kr    
+This packet is accepted!   
     
 ....
     
